@@ -86,10 +86,6 @@ Contributions are always welcome! Here's how you can contribute:
 4. Push your branch (git push origin feature/YourFeatureName).
 5. Open a pull request to the main repository.
 
-## 📝 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - OpenWeatherMap for providing the weather data API.
