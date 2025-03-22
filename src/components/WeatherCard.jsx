@@ -65,8 +65,8 @@ const WeatherCard = ({ city, removeCity, unit, setLoading }) => {
       <button
         className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 w-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex items-center justify-center space-x-2"
         onClick={() => {
-          setCityToRemove(city); // Set the city to remove
-          setShowConfirmation(true); // Show the confirmation dialog
+          setCityToRemove(city);
+          setShowConfirmation(true);
         }}
       >
         <Trash2 className="w-4 h-4" />
