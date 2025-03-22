@@ -35,7 +35,8 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/weather-dashboard.git
 2. Navigate to the project directory:
-    ```cd weather-dashboard
+   ```bash
+    cd weather-dashboard
 3. Install dependencies:
    ```bash
     npm install
