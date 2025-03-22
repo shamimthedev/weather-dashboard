@@ -3,38 +3,3 @@
 body{
   font-family: 'Inter', sans-serif;
 }
-
-.app {
-  padding: 20px;
-  text-align: center;
-}
-
-.weather-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.weather-card {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.city-search input {
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.unit-toggle button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.unit-toggle button:hover {
-  background-color: #0056b3;
-}
