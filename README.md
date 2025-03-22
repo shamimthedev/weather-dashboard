@@ -34,18 +34,21 @@ Ensure you have the following installed:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/weather-dashboard.git
+   ```
 2. Navigate to the project directory:
     ```cd weather-dashboard
 3. Install dependencies:
     ```npm install
     # or
     yarn install
+    ```
 4. Set up environment variables: Create a .env file in the root directory and add your OpenWeatherMap API key:
     ```VITE_OPENWEATHERMAP_API_KEY=your_api_key_here
 5. Start the development server:
     ```npm run dev
     # or
     yarn dev
+    ```
 6. Open your browser and navigate to http://localhost:3000.
 
 ## 🌐 Deployment
