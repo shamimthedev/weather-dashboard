@@ -4,10 +4,16 @@ const CitySearch = ({ addCity }) => {
   const [search, setSearch] = useState('');
   const [suggestions, setSuggestions] = useState([]);
 
+  const citiesList = [
+    'New York', 'London', 'Tokyo', 'Paris', 'Berlin',
+    'Mumbai', 'Sydney', 'Dubai', 'Toronto', 'Moscow',
+    'Cairo', 'Rome', 'Beijing', 'Los Angeles', 'Chicago',
+    'Singapore', 'Seoul', 'Madrid', 'Bangkok', 'Istanbul', 'Dhaka'
+  ];
+
   useEffect(() => {
     if (search) {
       const debounceTimer = setTimeout(() => {
-        const citiesList = ['New York', 'London', 'Tokyo', 'Paris', 'Berlin'];
         const filteredSuggestions = citiesList.filter((city) =>
           city.toLowerCase().includes(search.toLowerCase())
         );
@@ -27,17 +33,22 @@ const CitySearch = ({ addCity }) => {
   };
 
   return (
-    <div className="city-search">
+    <div className="city-search relative">
       <input
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search for a city..."
+        className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
       />
       {suggestions.length > 0 && (
-        <ul>
+        <ul className="absolute z-10 w-full bg-white border border-gray-200 rounded-lg shadow-lg mt-1 max-h-48 overflow-y-auto">
           {suggestions.map((city) => (
-            <li key={city} onClick={() => handleSelect(city)}>
+            <li
+              key={city}
+              onClick={() => handleSelect(city)}
+              className="px-4 py-2 hover:bg-blue-50 cursor-pointer transition duration-200"
+            >
               {city}
             </li>
           ))}
